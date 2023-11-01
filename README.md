@@ -16,3 +16,11 @@ Kontener wyłączyć możemy poprzez komendę `docker stop <nazwa>`
   
 - Wordpress z MariaDB oraz PHPMyAdmin
   Tutaj tak samo jak w przypadku skryptu pythona, musimy być w odpowiedniej lokalizacji (nazwanej w tym repo WordMariaPHP), a następnie przy pomocy komendy `docker-compose run` uruchomić kontenery. Po wstępnej konfiguracji możemy wejść na stronę tytułową Wordpressa pod adresem `localhost:81`, natomiast strona tytułowa PHPMyAdmin znajduje sie pod adresem 'localhost:82'. Aby wyłączyć działania kontenerów, należy użyć kombinacji `ctrl+c`.
+
+|Nazwa| Port Hosta/Host Port | Port Gościa/ Guest Port |
+|-----|----------------------|-------------------------|
+|HTTP Apache2| 88 | 8080|
+|HTTP Python|  80 | 8000|
+|PHPMyAdmin| 82| 8002|
+|SSH| 2022| 22|
+|Wordpress| 81 | 8001|
