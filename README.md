@@ -2,7 +2,7 @@
 
 Rozwiązanie zadania domowego zadanego przez Pana Dr Inż Wojciecha Thomasa
 ***Szczególnie polecam korzystanie z terminala SSH np. PuTTy (ułatwia to kopiowanie i wklejanie)***
-1. Na maszynie PhotonOS nie ma zainstalowanego Gita, dlatego można to zrobić komendą `sudo yum install git`
+1. Na maszynie PhotonOS nie ma zainstalowanego Gita, dlatego można to zrobić komendą `sudo yum install git -y`
 2. Aby skopiować repozytorium należy użyć komendy `git clone <Link>`
 3. Po skopiowaniu możemy sprawdzić, znajdujący się wewnątrz skrypt. Aby go uruchomić należy nadać mu uprawnienia `sudo chmod +x ./skrypt.sh` a następnie włączyć komendą `./skrypt.sh`. Skrypt update'uje naszego photona oraz instaluje docker composera
 
