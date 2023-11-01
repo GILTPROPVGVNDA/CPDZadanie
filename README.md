@@ -34,5 +34,5 @@ Garść przydatnych komend:
 - docker rm - usuwanie kontenerów
 
 Kącik PuTTy:
-Wklejanie -> Prawy przycisk myszy (WAŻNE! należy skopiować tekst z np.przeglądarki ctrl+c, a nie myszą)
-Kopiowanie -> Po zaznaczeniu wybranego tekstu naciśnij enter
+- Wklejanie -> Prawy przycisk myszy (WAŻNE! należy skopiować tekst z np.przeglądarki ctrl+c, a nie myszą)
+- Kopiowanie -> Po zaznaczeniu wybranego tekstu naciśnij enter
