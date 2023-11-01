@@ -1,0 +1,56 @@
+version: "2"
+services:
+  db:
+    image: mariadb:latest
+    platform: linux/amd64
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_TCP_PORT: 3310
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    ports:
+      - "3310:3310"
+    networks:
+      - wordpress_demo
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    environment:
+      PMA_HOST: db:3310
+      PMA_USER: wordpress
+      PMA_PASSWORD: wordpress
+    ports:
+       - "8002:80"
+    networks:
+       - wordpress_demo
+    depends_on:
+       - db
+  wordpress:
+    image: wordpress:latest
+    volumes:
+      - ./wordpress_data:/var/www/html
+    restart: always
+    platform: linux/amd64
+    environment:
+      WORDPRESS_DB_HOST: db:3310
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    ports:
+      - "8001:80"
+    depends_on:
+      - db
+    networks:
+      - wordpress_demo
+
+networks:
+  wordpress_demo:
+    driver: bridge
+volumes:
+  db_data:
+  phpmyadmin_data:
+  wordpress_data:
