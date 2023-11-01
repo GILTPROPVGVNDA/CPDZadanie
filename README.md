@@ -12,10 +12,10 @@ Możemy zobaczyć naszą stronę w przeglądarce poprzez adres `localhost:88` po
 Kontener wyłączyć możemy poprzez komendę `docker stop <nazwa>`
 
 - Skrypt Pythona
-  Podobnie jak w przypadku strony Apache2, warunkami początkowymi jest bycie w odpowiednim katalogu (tutaj nazwanym composetest). Po upewnieniu się, że jesteśmy w odpowiednim folderze, możemy uruchomić zbiór kontenerów komendą `docker-compose run`. Po pobraniu wszelkich plików, możemy sprawdzić nasz skrypt w przeglądarce korzystając z adresu `localhost:80`. Zbiór kontenerów możemy wyłączyć za pomocą kombinacji klawiszy `ctrl+c` w okienku z pracującymi kontenerami.
+  Podobnie jak w przypadku strony Apache2, warunkami początkowymi jest bycie w odpowiednim katalogu (tutaj nazwanym composetest). Po upewnieniu się, że jesteśmy w odpowiednim folderze, możemy uruchomić zbiór kontenerów komendą `docker-compose up`. Po pobraniu wszelkich plików, możemy sprawdzić nasz skrypt w przeglądarce korzystając z adresu `localhost:80`. Zbiór kontenerów możemy wyłączyć za pomocą kombinacji klawiszy `ctrl+c` w okienku z pracującymi kontenerami.
   
 - Wordpress z MariaDB oraz PHPMyAdmin
-  Tutaj tak samo jak w przypadku skryptu pythona, musimy być w odpowiedniej lokalizacji (nazwanej w tym repo WordMariaPHP), a następnie przy pomocy komendy `docker-compose run` uruchomić kontenery. Po wstępnej konfiguracji możemy wejść na stronę tytułową Wordpressa pod adresem `localhost:81`, natomiast strona tytułowa PHPMyAdmin znajduje sie pod adresem 'localhost:82'. Aby wyłączyć działania kontenerów, należy użyć kombinacji `ctrl+c`.
+  Tutaj tak samo jak w przypadku skryptu pythona, musimy być w odpowiedniej lokalizacji (nazwanej w tym repo WordMariaPHP), a następnie przy pomocy komendy `docker-compose up` uruchomić kontenery. Po wstępnej konfiguracji możemy wejść na stronę tytułową Wordpressa pod adresem `localhost:81`, natomiast strona tytułowa PHPMyAdmin znajduje sie pod adresem 'localhost:82'. Aby wyłączyć działania kontenerów, należy użyć kombinacji `ctrl+c`.
 
 |Nazwa| Port Hosta/Host Port | Port Gościa/ Guest Port |
 |-----|----------------------|-------------------------|
